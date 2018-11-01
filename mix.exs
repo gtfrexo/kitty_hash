@@ -36,7 +36,7 @@ defmodule Kittyhash.MixProject do
       {:argon2_elixir, "~> 1.3"},
       {:bcrypt_elixir, "~> 1.0"},
       {:pbkdf2_elixir, "~> 0.12"},
-      {:ex_doc, ">= 0.0.0", only: :dev}
+      {:ex_doc, "~> 0.18.0", only: :dev}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
     ]
