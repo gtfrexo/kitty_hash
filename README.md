@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Kittyhash
 
 **TODO: Add description**
@@ -19,3 +20,7 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/kittyhash](https://hexdocs.pm/kittyhash).
 
+=======
+# kitty_hash
+Kitty hash for passwords in elixir
+>>>>>>> f863987c2c567cbae56c2023d90cfb72a7f4097c
