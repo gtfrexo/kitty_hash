@@ -4,11 +4,11 @@ defmodule Kittyhash.MixProject do
   def project do
     [
       app: :kittyhash,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      package: package ,
+      package: package() ,
       description: "Pashword hashing with kitty!"
     ]
   end

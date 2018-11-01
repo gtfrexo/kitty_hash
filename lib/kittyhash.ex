@@ -4,23 +4,26 @@ defmodule Kittyhash do
   alias Comeonin.Pbkdf2
   
   @harshHashes [
-    "Hashed to: H1D2Kitty-HashMonk3yB3ar5",
-    "Hashed to: H2D2Kitty-Hash5harkG0rk",
-    "Hashed to: H2D2Kitty-HashW0lfTig3r"
+    "H1D2Kitty-HashMonk3yB3ar5",
+    "H2D2Kitty-Hash5harkG0rk",
+    "H3D2Kitty-HashW0lfTig3r"
   ]
 
-  def hasher_slasher(hash) do
+  def kitties_hash() do
     mash = @harshHashes 
     |> Enum.shuffle 
     |> List.first
     {:ok, mash}
-    if mash === "Hashed to: H1D2Kitty-HashMonk3yB3ar5" do
+  end
+
+  def hasher_slasher(hash, mash) do
+    if mash === "H1D2Kitty-HashMonk3yB3ar5" do
       hash_for_kitty_method_one(hash)
     end
-    if mash === "Hashed to: H2D2Kitty-Hash5harkG0rk" do
+    if mash === "H2D2Kitty-Hash5harkG0rk" do
       hash_for_kitty_method_two(hash)
     end
-    if mash === "Hashed to: H2D2Kitty-HashW0lfTig3r" do
+    if mash === "H3D2Kitty-HashW0lfTig3r" do
       hash_for_kitty_method_three(hash)
     end
   end
@@ -41,13 +44,13 @@ defmodule Kittyhash do
   end
 
   def kitty_paws(hash, postHash, mash) do
-    if mash === "Hashed to: H1D2Kitty-HashMonk3yB3ar5" do
+    if mash === "H1D2Kitty-HashMonk3yB3ar5" do
       kitty_paws_method_one(hash, postHash)
     end
-    if mash === "Hashed to: H2D2Kitty-Hash5harkG0rk" do
+    if mash === "H2D2Kitty-Hash5harkG0rk" do
       kitty_paws_method_two(hash, postHash)
     end
-    if mash === "Hashed to: H2D2Kitty-HashW0lfTig3r" do
+    if mash === "H3D2Kitty-HashW0lfTig3r" do
       kitty_paws_method_three(hash, postHash)
     end
   end
