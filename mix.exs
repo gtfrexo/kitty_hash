@@ -15,7 +15,6 @@ defmodule Kittyhash.MixProject do
   defp package do
     [
       files: ["lib", "mix.exs", "README.md", "LICENSE*"],
-      description: ["Password Hashing with Kitty"],
       maintainers: ["Gavin Rose"],
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/gtfrexo/kitty_hash"}
